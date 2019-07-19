@@ -10,7 +10,7 @@ public class Leetcode_430_Flatten_a_Multilevel_Doubly_Linked_List {
         DoublyLinkedListNode[] res = {null, null};
         DoublyLinkedListNode  cur  = node;
         while(cur != null) { DoublyLinkedListNode nex = cur.next;
-                if(cur.child == null) {
+            if(cur.child == null) {
                 if(nex == null) {
                     res[1] = cur;
                     return res;
